@@ -13,8 +13,12 @@ class Gear
     end
 
     def gear_inches
-        # tire goes aorund rim twice for diameter
-        ratio * (rim + (tire * 2))
+        # tire goes around rim twice for diameter
+        ratio * diameter
+    end
+
+    def diameter
+        rim + (tire * 2)
     end
 
 end
